@@ -1,3 +1,15 @@
 1. To remove docker images from cloud9 to clean up space
 
 docker system prune -a
+
+2. To check syntax 
+
+terraform validate
+
+3. format a terraform file
+
+terraform fmt -diff
+
+4. terraform apply --auto-approve
+
+5. terraform destroy --auto-approve	 
