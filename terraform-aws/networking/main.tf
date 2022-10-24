@@ -21,6 +21,10 @@ resource "aws_vpc" "mtc_vpc" {
   tags = {
     Name = "mtc_vpc-${random_integer.random.id}"
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_subnet" "mtc_public_subnet" {
